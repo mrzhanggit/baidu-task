@@ -1,0 +1,210 @@
+/*基本样式*/
+body{
+  background:#dedede;
+  font-size: 12px;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+.cl::after{
+  display: block;
+  visibility: hidden;
+  height: 0;
+  content: ".";
+  clear: both;
+}
+.container{
+  width: 1280px;
+  margin: 0 auto;
+}
+/*布局样式*/
+   .main{
+      margin:0 40px;
+      position: relative;
+      min-width: 640px;
+   }
+   .contents{
+     margin-right: 420px;
+   }
+   .aside{
+     width: 360px;
+   }
+/*头部样式开始*/
+header{
+  height: 40px;
+  padding: 10px 40px;
+  margin: 0px auto 20px auto;
+  background-color: #333333;
+}
+header a{
+  color: #fff;
+  text-decoration: none;
+}
+header a:hover{
+  color: #cbcbcb;
+}
+header h1{
+  float: left;
+  width: 120px;
+  height: 40px;
+  background:url(../images/baidu_jgylogo3.gif) no-repeat left center;
+  text-indent: -9999px;
+}
+header ul{
+  float: right;
+}
+header ul li{
+  display: inline-block;
+  line-height: 40px;
+  margin-right: 10px;
+
+}
+/*文章章节样式开始*/
+article h2{
+  font-size: 22px;
+  padding: 20px 0;
+}
+article h3{
+  font-size: 16px;
+  color: #766b76;
+}
+article .post-info{
+  color: #766b76;
+  padding: 15px 0;
+}
+article p{
+  font-size:14px;
+  line-height: 26px;
+  text-indent: 2em;
+}
+/*文章内容列表样式*/
+article ul li{
+  font-size: 14px;
+  line-height: 26px;
+  list-style: none;
+  text-indent: 2em;
+}
+/*文章内容图片样式开始*/
+article.pic ul li {
+  width:200px;
+  padding:10px;
+  border: 1px solid #cecece;
+  float: left;
+  margin: 0 20px 20px 0;
+}
+article.pic ul li:hover{
+  box-shadow: 0 0 4px #ccc;
+}
+article.pic ul li h3{
+  font-size: 14px;
+  color: #000;
+  text-align: center;
+}
+article.pic ul li img{
+  width: 200px;
+}
+/*最后一篇文章内容样式开始*/
+article.last ol{
+  margin-left: 20px;
+}
+article.last ol li {
+  font-size: 14px;
+  line-height: 26px;
+
+}
+article.last table{
+  width: 100%;
+  border: 1px solid #cecece;
+  border-collapse:collapse;
+}
+article.last table caption{
+  font-size: 16px;
+  color: #000;
+  padding: 5px 0;
+}
+article.last table th{
+  background-color: #333333;
+  height: 30px;
+  color: #fff;
+}
+article.last table td{
+  border: 1px solid #cecece;
+  text-align: center;
+  height: 20px;
+}
+article.last table tfoot{
+  background-color: #cccccc;
+}
+article,aside{
+  border: 1px solid #cbcbcb;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color:#fff;
+  box-shadow:0px 0px 4px #848484;
+}
+article:hover,aside:hover{
+  box-shadow: 0px 0px 10px #999999;
+}
+/*边栏样式开始*/
+aside{
+  font-size: 14px;
+  position: absolute;
+  top:0;
+  right: 0;
+}
+aside h2{
+  font-size: 22px;
+  border-left: 4px solid #cbcbcb;
+  height: 40px;
+  line-height: 40px;
+  text-indent: 10px;
+  margin-bottom: 20px;
+}
+aside form{
+  padding-top:20px;
+}
+aside form label{
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    margin-right: 10px;
+
+}
+aside form div{
+  margin-bottom: 10px;
+}
+aside form .dec label{
+  vertical-align: top;
+}
+
+aside form p{
+  margin: 10px 0;
+  color: #ccc;
+  padding-left: 110px;
+  font-size: 12px;
+}
+aside form button{
+  margin: 10px 0;
+  padding: 10px 0;
+  text-align: center;
+  border: 1px solid #00f;
+  width: 100%;
+  display: block;
+  background-color: #025cd0;
+  color: #fff;
+  border-radius:5px;
+  outline: none;
+}
+aside form button:hover{
+  background-color: #025cff;
+}
+/*底部声明样式开始*/
+footer{
+  width:100%;
+  height: 70px;
+  background: #000;
+  line-height: 70px;
+  text-align: center;
+  color:#fff;
+}
