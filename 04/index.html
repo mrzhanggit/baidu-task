@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>水平垂直居中布局</title>
+  <style>
+   .container{
+     background: #ccc;
+      color: white;
+      width: 400px;
+      height: 200px;
+      transform: translate(-50%, -50%);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+       overflow: hidden;
+   }
+   .container span{
+     display: inline-block;
+     width: 100px;
+     height:100px;
+     border-radius:50%;
+     background-color:#fc0;
+     position:absolute;
+   }
+   .container span:nth-child(1){
+        left:-50px;;
+        top:-50px;
+   }
+   .container span:nth-child(2){
+        right:-50px;
+        bottom:-50px;
+   }
+  </style>
+</head>
+      <div class="container">
+        <span></span>
+        <span></span>
+      </div>
+</body>
+</html>
