@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>三栏式布局</title>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+    }
+    img{
+      width: 80px;
+      height: 80px;
+      border: 1px solid #999999;
+
+    }
+    .cl::after{
+      display: block;
+      visibility: hidden;
+      height: 0;
+      content: ".";
+      clear: both;
+    }
+    /*布局样式*/
+    .main{
+      background: #eee;
+      margin: 20px;
+      padding: 20px;
+      min-width: 600px;
+    }
+    .team{
+      width: 158px;
+      float: left;
+      background-color: #fff;
+      margin-right: -200px;
+    }
+    .main-box{
+      float: left;
+      background-color: #fff;
+      margin-left:220px;
+      margin-right:140px;
+    }
+    .member{
+      float: left;
+      width: 76px;
+      margin-left: -120px;
+      background-color: #fff;
+    }
+    /*团队样式*/
+    .team,.main-box,.member{
+      padding: 20px;
+      border: 1px solid #999999;
+    }
+    .team h3{
+      float: right;
+      font-size: 14px;
+    }
+    /*主内容区样式*/
+    .main-box{
+      padding: 20px;
+    }
+    .main-box h2,.main-box h3{
+      margin-bottom: 20px;
+    }
+    .main-box p{
+      text-indent: 2em;
+      font-size: 14px;
+      line-height: 1.5em;
+    }
+    /*成员区域样式*/
+    .member ul li{
+      list-style: none;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+    <div class="main cl">
+      <div class="team">
+        <img src="images/team.png" alt="团队图标">
+        <h3>业余搞前端</h3>
+      </div>
+      <div class="main-box">
+        <h2>业余搞前端</h2>
+        <h3>团队介绍</h3>
+        <p>我们团队是来之各个地方的前端爱好者，各个成员都或多或少的接触过web前端开发，但是基础比较薄弱，希望通过这个平台锻炼一下自己的开发能力，希望我们通过百度前端学院的课程练习后能有一定的帮助。</p>
+        <p>在“让天下没有难做的生意”的使命感召下，1688UED一直伴随着阿里巴巴B类业务的丰富与发展，我们致力于通过
+不断提升自己的专业能力和职业能力，来持续为业务进行卓有成效的贡献。我们视用专业技术帮助业务成功为目标，
+视为用户提供最优秀的业务体验为己任。极致的设计产出是我们的执念，享受设计中的快乐与成就亦是我们的追求。</p>
+<p>在“让天下没有难做的生意”的使命感召下，1688UED一直伴随着阿里巴巴B类业务的丰富与发展，我们致力于通过
+不断提升自己的专业能力和职业能力，来持续为业务进行卓有成效的贡献。我们视用专业技术帮助业务成功为目标，
+视为用户提供最优秀的业务体验为己任。极致的设计产出是我们的执念，享受设计中的快乐与成就亦是我们的追求。</p>
+        <h3>队员介绍</h3>
+        <p>有时间在慢慢补充</p>
+<p>U一点，快乐、极致，我们都有一点点。
+U一点，相比昨天的自己，我们每天都优秀一点点。</p>
+      </div>
+      <div class="member">
+        <ul>
+          <li>
+            <img src="images/member-1.png" alt="">
+          </li>
+          <li>
+            <img src="images/member-2.png" alt="">
+          </li>
+          <li>
+            <img src="images/member-3.png" alt="">
+          </li>
+          <li>
+            <img src="images/member-4.png" alt="">
+          </li>
+        </ul>
+      </div>
+    </div>
+</body>
+</html>
