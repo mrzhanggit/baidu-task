@@ -1,0 +1,361 @@
+/*基本样式*/
+body{
+  font-size: 12px;
+  background-color: #cccccc;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+}
+ul li{
+  list-style: none;
+}
+.cl::after{
+  display: block;
+  visibility: hidden;
+  height: 0;
+  content: ".";
+  clear: both;
+}
+.container{
+  width: 1280px;
+  margin: 0 auto;
+}
+/*布局样式*/
+header,section,footer{
+  width: 980px;
+  margin: 0 auto;
+  padding: 0 44px;
+  background-color: #fff;
+}
+
+footer{
+  height:6px;
+}
+.top-wrap  article{
+  float: left;
+}
+.post{/*上部份区域左边*/
+  width:641px;
+  float: left;
+
+}
+.about{
+  /*上部份右边区域*/
+  width:203px;
+  float: left;
+  margin-left: 48px;
+}
+.news{
+  /*下半部分区域左边新闻*/
+  width:415px;
+  float: left;
+}
+.pic-news{
+  /*下半部分右边图片新闻*/
+  width: 458px;
+  height: 257px;
+  float: right;
+  overflow: hidden;
+
+}
+.news-list{
+  /*下半部分右边新闻列表*/
+  width: 459px;
+  height: 318px;
+  background-color: #eeedd6;
+  float: right;
+}
+/*页头样式开始区域*/
+header div.line{
+  width: 892px;
+  border-bottom: 2px solid #938e8c;
+}
+header div a{
+  width: 110px;
+  height: 16px;
+  padding-top: 45px;
+  display: inline-block;
+  background-color: #d45d5c;
+  vertical-align: bottom;
+  color: #fff;
+  text-align: center;
+}
+header div time{
+  float: right;
+  display: inline-block;
+  padding-top: 45px;
+}
+/*上半部分区域样式开始*/
+.top-wrap{
+  padding-top: 30px;
+}
+.post .banner{
+  position:relative;
+  margin-bottom: 42px;
+}
+.post .banner span{
+  display: inline-block;
+  width: 191px;
+  height: 301px;
+
+}
+.post .banner .font{
+  background-color: rgba(48,84,66,0.7);
+  position:absolute;
+  left:0;
+  top:0;
+}
+.post .banner .back{
+  background-color: rgba(108,69,81,0.7);
+  position:absolute;
+  right:0;
+  top:0;
+}
+/*what、when、how区域样式*/
+
+.top-wrap  article h3{
+  font-size: 16px;
+  text-decoration: underline;
+  font-family: "微软雅黑";
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+.top-wrap article p{
+  font-size: 12px;
+  font-family: "宋体";
+  line-height: 16px;
+  color:#828383;
+}
+.what{
+  width: 230px;
+  margin-right:26px;
+}
+.what h3{
+  color: #418c59;
+}
+.what p{
+
+}
+.when h3{
+  color:#d2994f;
+}
+.when{
+  width: 206px;
+  margin-right:26px;
+}
+.how{
+  width: 153px;
+}
+.how h3{
+  color: #cc7680;
+
+}
+.how ul{
+  margin-top: 20px;
+}
+.how ul li{
+  font-family:"微软雅黑";
+  line-height: 16px;
+}
+.how ul li span{
+  color: #cd4a48;
+  opacity:0.7;
+}
+/*about区域样式*/
+.about{
+  font-family:"微软雅黑";
+}
+.about h2{
+  font-size: 24px;
+  color: #000;
+  text-decoration: underline;
+  line-height: 40px;
+  border-top: 2px solid #cc8091；
+}
+.about p{
+  font-size: 12px;
+  color: #676767;
+  font-family:"楷体";
+}
+.about >span{
+  font-size: 116px;
+  color:#75b86b;
+  font-family:"微软雅黑";
+  display: inline-block;
+  margin-top: 20px;
+}
+.about p:nth-of-type(2) {
+  padding-top: 8px;
+}
+.about p:nth-of-type(2) span{
+    font-size: 21px;
+    color: #cc8091;
+    font-family: "微软雅黑";
+    font-style: italic;
+    font-weight: bolder;
+}
+.about p:nth-of-type(2) strong{
+  font-size: 55px;
+  color: #cc8091;
+
+}
+/*下半部分区域样式开始*/
+.bottom-wrap{
+  padding-top:40px;
+}
+.news{
+  /*新闻样式*/
+
+}
+.news h2{
+  font-size: 42px;
+  font-family: "黑体";
+  padding-bottom:5px;
+  color: #11456b;
+}
+.news h2 span{
+  font-size: 75px;
+  font-weight: bolder;
+  font-family: "黑体";
+  color: #f5e327;
+}
+.news h3{
+  font-size: 33px;
+  color: #11456b;
+  font-family: "黑体";
+  font-weight: bolder;
+  border-bottom: 2px solid #11456b;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+.news p{
+  color: #767777;
+  font-size: 12px;
+  line-height: 16px;
+}
+.news p:nth-of-type(1)::first-letter{
+  font-size: 70px;
+  color: #f5e327;
+  font-family: "微软雅黑";
+  margin-right: 5px;
+  float: left;
+  line-height: 70px;
+}
+.news img{
+  float: right;
+  margin: 10px 0 10px 10px;
+}
+/*新闻图片区域样式开始*/
+.pic-news{
+  position:relative;
+  margin-bottom: 30px;
+}
+.pic-news h3{
+  width: 458px;
+  height: 61px;
+  background-color: rgba(0,0,0,0.7);
+  color: #fff;
+  font-size: 26px;
+  line-height: 61px;
+  font-family: "微软雅黑";
+  position:absolute;
+  left: 0;
+  bottom:0;
+}
+.pic-news h3 i{
+  display: inline;
+  border-left: 3px solid #72b16a;
+  /*background-color: #72b16a;*/
+  padding: 5px 10px 5px 0;
+  margin-left: 30px;
+}
+.pic-news h3 span{
+  font-size: 12px;
+  color: #72b16a;
+  font-style:italic;
+  margin-left:20px;
+}
+/*新闻列表区域样式开始*/
+.news-list ul{
+  padding: 30px 30px 8px 30px;
+}
+.news-list ul li{
+  font-size: 16px;
+  margin-bottom: 24px;
+  color: #5a5b5b;
+}
+.news-list ul li span{
+  font-size: 12px;
+  font-style: italic;
+  float: right;
+
+}
+.news-list>div{
+  background-color: #d45d5c;
+  width: 220px;
+  height: 120px;
+  display: inline-block;
+  float: left;
+  padding: 20px;
+}
+.news-list>div span{
+  font-size: 110px;
+  color: #fff;
+  float: left;
+}
+.news-list>div span i{
+  border-left:2px solid #fff;
+  display: inline-block;
+  height: 86px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.news-list>div h3{
+  font-size: 16px;
+  font-style: italic;
+  padding-top: 10px;
+  color: #fff;
+  line-height: 20px;
+}
+.news-list>div p{
+  font-size: 10px;
+  margin-top: 10px;
+  color: #fff;
+  line-height: 16px;
+}
+.news-list>p{
+  display: inline-block;
+  width: 158px;
+  padding: 20px;
+  float: left;
+  font-size: 14px;
+  font-family:"黑体";
+  color: #5a5b5b;
+  font-style: italic;
+  line-height: 18px;
+}
+.news-list>p::before{
+  content: url(../images/vowel_l.png);
+  margin-right: 10px;
+
+}
+.news-list>p::after{
+  content: url(../images/vowel_r.png);
+  margin-left: 10px;
+}
+/*页脚区域样式*/
+footer{
+  height: 60px;
+  padding-top: 30px;
+}
+footer a{
+  display: block;
+  border-top: 2px solid #938e8c;
+  text-align: right;
+  color: #d45d5c;
+  padding-top: 5px;
+}
